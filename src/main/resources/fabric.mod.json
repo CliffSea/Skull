@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "skull",
+  "version": "${version}",
+  "name": "Skull",
+  "description": "",
+  "authors": [
+    "Cliffsea"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/skull/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.cliff.skull.Skull"
+    ],
+    "modmenu": [
+      "me.cliff.skull.config.SkullModMenuScreen"
+    ]
+  },
+  "mixins": [
+    "skull.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
